@@ -13,7 +13,8 @@ services:
       - redis
     volumes:
       - ./:/usr/src/smart-brain-api
-      - ./node_modules:/usr/src/smart-brain-api/node_modules
+      - /usr/src/smart-brain-api/node_modules
+    command: npm start
 
   
 #Postgres
